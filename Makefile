@@ -270,6 +270,8 @@ DIST          = ../../../Qt/6.11.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickvectorimagehelpers_private.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri \
@@ -302,7 +304,6 @@ DIST          = ../../../Qt/6.11.0/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -535,6 +536,8 @@ Makefile: car.pro ../../../Qt/6.11.0/gcc_64/mkspecs/linux-g++/qmake.conf ../../.
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickvectorimagehelpers_private.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri \
+		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri \
+		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri \
 		../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri \
@@ -567,7 +570,6 @@ Makefile: car.pro ../../../Qt/6.11.0/gcc_64/mkspecs/linux-g++/qmake.conf ../../.
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/qt_config.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/toolchain.prf \
 		../../../Qt/6.11.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -780,6 +782,8 @@ Makefile: car.pro ../../../Qt/6.11.0/gcc_64/mkspecs/linux-g++/qmake.conf ../../.
 ../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickvectorimagehelpers_private.pri:
 ../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets.pri:
 ../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_quickwidgets_private.pri:
+../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_serialport.pri:
+../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_serialport_private.pri:
 ../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_shadertools.pri:
 ../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_shadertools_private.pri:
 ../../../Qt/6.11.0/gcc_64/mkspecs/modules/qt_lib_spatialaudio.pri:
@@ -812,7 +816,6 @@ Makefile: car.pro ../../../Qt/6.11.0/gcc_64/mkspecs/linux-g++/qmake.conf ../../.
 ../../../Qt/6.11.0/gcc_64/mkspecs/features/qt_config.prf:
 ../../../Qt/6.11.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../Qt/6.11.0/gcc_64/mkspecs/features/spec_post.prf:
-.qmake.stash:
 ../../../Qt/6.11.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../Qt/6.11.0/gcc_64/mkspecs/features/toolchain.prf:
 ../../../Qt/6.11.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -3237,24 +3240,7 @@ daochewindow.o: daochewindow.cpp daochewindow.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qlocale.h \
 		../../../Qt/6.11.0/gcc_64/include/QtGui/qguiapplication_platform.h \
 		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qtabwidget.h \
-		ui_daochewindow.h \
-		../../../Qt/6.11.0/gcc_64/include/QtCore/QVariant \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QLabel \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlabel.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qframe.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qpicture.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextdocument.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QMenuBar \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qmenubar.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qmenu.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QStatusBar \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qstatusbar.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QWidget
+		ui_daochewindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o daochewindow.o daochewindow.cpp
 
 form_daoche.o: form_daoche.cpp form_daoche.h \
@@ -3460,18 +3446,7 @@ form_daoche.o: form_daoche.cpp form_daoche.h \
 		../../../Qt/6.11.0/gcc_64/include/QtGui/qinputmethod.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qlocale.h \
 		../../../Qt/6.11.0/gcc_64/include/QtGui/qguiapplication_platform.h \
-		ui_form_daoche.h \
-		../../../Qt/6.11.0/gcc_64/include/QtCore/QVariant \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QLabel \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlabel.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qframe.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qpicture.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextdocument.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractbutton.h
+		ui_form_daoche.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o form_daoche.o form_daoche.cpp
 
 mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -3750,13 +3725,7 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		daochewindow.h \
 		distanceworker.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/QThread \
-		ui_mainwindow.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 weather.o: weather.cpp weather.h \
@@ -4002,27 +3971,6 @@ weather.o: weather.cpp weather.h \
 		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextdocument.h \
 		weatherdata.h \
 		ui_weather.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/QIcon \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QGridLayout \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qgridlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QHBoxLayout \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QLineEdit \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlineedit.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextcursor.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextformat.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qpen.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextoption.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QSpacerItem \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QVBoxLayout \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QWidget \
 		../../../Qt/6.11.0/gcc_64/include/QtGui/QMouseEvent \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/QJsonObject \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qjsonobject.h \
@@ -4287,32 +4235,7 @@ map.o: map.cpp map.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qfile.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qfiledevice.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/QDebug \
-		ui_map.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QComboBox \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qcombobox.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qstyleoption.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qvalidator.h \
-		../../../Qt/6.11.0/gcc_64/include/QtCore/qregularexpression.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qslider.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractslider.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qstyle.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qtabbar.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qrubberband.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qframe.h \
-		../../../Qt/6.11.0/gcc_64/include/QtCore/qabstractitemmodel.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QHBoxLayout \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qgridlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QWidget
+		ui_map.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o map.o map.cpp
 
 music.o: music.cpp music.h \
@@ -4544,24 +4467,7 @@ music.o: music.cpp music.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qfile.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qfiledevice.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/QStringList \
-		ui_music.h \
-		../../../Qt/6.11.0/gcc_64/include/QtCore/QVariant \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QHBoxLayout \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qgridlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QLabel \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlabel.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qpicture.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextdocument.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QSlider \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QWidget
+		ui_music.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o music.o music.cpp
 
 video.o: video.cpp video.h \
@@ -4790,23 +4696,6 @@ video.o: video.cpp video.h \
 		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qtabbar.h \
 		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qrubberband.h \
 		ui_video.h \
-		../../../Qt/6.11.0/gcc_64/include/QtCore/QVariant \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QHBoxLayout \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qgridlayout.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QLabel \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qlabel.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qpicture.h \
-		../../../Qt/6.11.0/gcc_64/include/QtGui/qtextdocument.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QPushButton \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qpushbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/qabstractbutton.h \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QSlider \
-		../../../Qt/6.11.0/gcc_64/include/QtWidgets/QWidget \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/QFile \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qfile.h \
 		../../../Qt/6.11.0/gcc_64/include/QtCore/qfiledevice.h
