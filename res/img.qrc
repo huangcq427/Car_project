@@ -22,16 +22,17 @@
         <file>img/staticimage.png</file>
         <file>img/zoom-in.png</file>
         <file>img/zoom-out.png</file>
-        <file>style.qss</file>
-        <file>res/airQuity.png</file>
-        <file>res/close.png</file>
-        <file>res/eastWind.png</file>
-        <file>res/muchcloud.png</file>
-        <file>res/output.json</file>
-        <file>res/PM25.png</file>
-        <file>res/search.png</file>
-        <file>res/sun.png</file>
-        <file>res/tempature.png</file>
         <file>img/daoche.png</file>
+        <file>style/style.qss</file>
+        <file>sun.png</file>
+        <file>search.png</file>
+        <file>tempature.png</file>
+        <file>PM25.png</file>
+        <file>output.json</file>
+        <file>muchcloud.png</file>
+        <file>img.qrc</file>
+        <file>eastWind.png</file>
+        <file>close.png</file>
+        <file>airQuity.png</file>
     </qresource>
 </RCC>

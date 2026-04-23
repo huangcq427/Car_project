@@ -1,40 +1,35 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2021-07-16T17:13:44
-#
-#-------------------------------------------------
-CONFIG += c++17  # Qt6 推荐 C++17，原为 C++11
-QT       += core gui widgets network  # 显式写出 widgets，不再依赖 greaterThan
+QT       += core gui widgets network
 
-TARGET = car
-TEMPLATE = app
+CONFIG += c++17
 
-SOURCES += main.cpp\
-    daochewindow.cpp \
-    form_daoche.cpp \
-        mainwindow.cpp \
-    weather.cpp \
-    map.cpp \
-    music.cpp \
-    video.cpp
+SOURCES += \
+    src/daochewindow.cpp \
+    src/form_daoche.cpp \
+    src/main.cpp \
+    src/mainwindow.cpp \
+    src/map.cpp \
+    src/music.cpp \
+    src/video.cpp \
+    src/weather.cpp
 
-HEADERS  += mainwindow.h \
-    daochewindow.h \
-    distanceworker.h \
-    form_daoche.h \
-    weather.h \
-    map.h \
-    music.h \
-    video.h \
-    weatherdata.h
+HEADERS += \
+    src/daochewindow.h \
+    src/distanceworker.h \
+    src/form_daoche.h \
+    src/mainwindow.h \
+    src/map.h \
+    src/music.h \
+    src/video.h \
+    src/weatherdata.h \
+    src/weather.h
 
-FORMS    += mainwindow.ui \
-    daochewindow.ui \
-    form_daoche.ui \
-    map.ui \
-    music.ui \
-    video.ui \
-    weather.ui
+FORMS += \
+    src/daochewindow.ui \
+    src/form_daoche.ui \
+    src/mainwindow.ui \
+    src/map.ui \
+    src/music.ui \
+    src/video.ui \
+    src/weather.ui
 
-RESOURCES += \
-    img.qrc
+RESOURCES +=  res/img.qrc

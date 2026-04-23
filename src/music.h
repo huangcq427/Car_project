@@ -9,6 +9,7 @@
 #include <QTimer>
 #include <QFile>
 #include <QStringList>
+#include <QDir>  // 添加这一行
 
 namespace Ui {
 class Music;
